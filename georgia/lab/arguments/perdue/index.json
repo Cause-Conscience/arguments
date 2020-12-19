@@ -1,0 +1,124 @@
+{
+    "Well these two seats as Lindsey well noted are the last line of defense against this liberal, socialist agenda the Democrats will perpetrate.": {
+        "index": 1,
+a        "conclusion to": [4, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+        "deception": [
+            "false enemy", "exploiting fear", "Why?"
+        ],
+        "assumptions": [
+            "That the democratic agenda is objectionable even criminal.",
+            "That liberalism is wrong.",
+            "That socialism is wrong"
+        ]
+    },
+    "We heard Schumer just last week say that if we take Georgia, we change America.": {
+        "index": 2,
+        "premise of": 4,
+        "falsifiable by": ["If the Georgia Senate Seats do not change America", "Did Schumer say this?"]
+    },
+    "We heard AOC say: we, they have to have these two seats because they don't want to negotiate.": {
+        "index": 3,
+        "premise of": 4,
+        "deception": ["straw man"],
+        "assumptions": ["That what AOC and the democrats want is bad."],
+        "irony": ["The Republicans have expanded their agenda against the democrats wills."]
+    },
+    "They want total control.": {
+        "index": 4,
+        "conclusion to": [2, 3],
+        "premise of": 1,
+        "deception": [
+            "exploiting fear", "false enemy"
+        ],
+        "irony": ["The Republicans have exercised control without regard for the concerns of the Democrats."]
+    },
+    "And so what's at stake is this: is that Schumer will change the rules in the Senate": {
+        "index": 5,
+        "premise of": 6
+    },
+    "so they can do anything they want with fifty votes plus the Vice president's vote is a tiebreaker.": {
+        "index": 6,
+        "conclusion to": 5,
+        "premise of": 1,
+        "deception": ["straw man"]
+    },
+    "They'll pack the court.": {
+        "index": 7,
+        "conclusion to": 8,
+        "premise of": 1,
+        "deception": ["exploiting fear", "straw man"],
+        "resources": [
+            "https://www.forbes.com/sites/alisondurkee/2020/09/22/could-the-democrats-pack-the-supreme-court-here-are-the-possible-obstacles-including-joe-biden/?sh=27aea2e06ef0"
+        ]
+    },
+    "They want to add four new democrat seats by adding two new states.": {
+        "index": 8,
+        "premise of": 7,
+        "resources": [
+            "https://www.theatlantic.com/ideas/archive/2020/02/case-new-states/606148/",
+            "https://nypost.com/2020/09/18/democrats-want-to-add-new-states-to-lock-in-senate-control-forever/"
+        ]
+    },
+    "And they eventually want to do away with the electoral college": {
+        "index": 9,
+        "premise of": 10
+    },
+    "And that will allow them, Maria to perpetrate this agenda that they've been espousing now through the presidential primary all year": {
+        "index": 10,
+        "conclusion to": 9,
+        "premise of": 1
+    },
+    "And that is the Green New Deal": {
+        "index": 11,
+        "premise of": 1
+    },
+    "they want to defund the police": {
+        "index": 12,
+        "premise of": 1
+    },
+    "open borders": {
+        "index": 13,
+        "premise of": 1
+    },
+    "they want to have sanctuary cities": {
+        "index": 14,
+        "premise of": 1,
+        "resources": ["https://joebiden.com/immigration/"]
+    },
+    "they want to cut the military spending after we just begun rebuilding it after Obama's decimation of it": {
+        "index": 15,
+        "premise of": 1
+    },
+    "and then they want to take our private health insurance away": {
+        "index": 16,
+        "premise of": 1
+    },
+    "180 million people,": {
+        "index": 17,
+        "premise of": 1
+    },
+"they want to take their private health insurance away": {
+        "index": 18,
+        "premise of": 1
+    },
+    "And again the Green New Deal which is the most exasperating part of this agenda.": {
+        "index": 19,
+        "premise of": 1,
+        "deception": ["exploiting fear"],
+        "resources": [
+            "https://joebiden.com/clean-energy/",
+            "https://www.factcheck.org/2019/02/the-facts-on-the-green-new-deal/"
+        ],
+        "questions": ["Why is the Green New Deal exasperating?"]
+    },
+    "They are dead serious about it.": {
+        "index": 20,
+        "premise of": 1,
+        "deception": [""]
+    },
+    "So that's what's at stake here is that we're the last line of defense, Maria.": {
+        "index": 21,
+        "repeated": 1
+    }
+
+}

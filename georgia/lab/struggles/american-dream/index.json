@@ -1,0 +1,81 @@
+{
+    "question": "Would electing Republican senators in Georgia protect the American Dream?",
+    "argument": {
+        "conclusion": "Electing Republican senators in Georgia would not protect the American Dream.",
+        "premises": [
+            {
+                "conclusion": "Unemployment would decrease much slower and would remain higher if Republicans were elected in Georgia.",
+                "premises": [
+                    {
+                        "premise": "Both Republicans elected will both block the 'Democratic agenda.'",
+                        "evidence": [
+                            {
+                                "url": "https://www.youtube.com/watch?v=-9Q8li1f0gM",
+                                "how": "Georgia Senator Perdue: \"these two seats, as Lindsey well noted, are the last line of defense against this liberal, socialist agenda the Democrats will perpetrate.\"",
+                                "start-time": "0:36"
+                            },
+                            {
+                                "url": "https://www.c-span.org/video/?478296-1/georgia-us-senate-special-election-debate",
+                                "how": "Georgia Senator Kelly Loeffler says: \"There are two visions for our country. Mine: the American dream. My opponent: socialism.\"",
+                                "start-time": "54:13"
+                            },
+                            {
+                                "url": "https://www.c-span.org/video/?478296-1/georgia-us-senate-special-election-debate",
+                                "how": "\"He wants to fundamentally change America into a socialist country. Well I'm not going to let that happen.\"",
+                                "start-time": "54:54",
+                                "context": "Senator Loeffler about the Reverend Raphael Warnock." 
+                                
+                            }
+                        ]
+                    },
+                    {
+                        "premise": "Moody's Analytics published a report (The Macroeconomic Consequences: Trump vs Biden) which showed that compared to what Trump and the Republicans had proposed, the Biden Jobs Program was predicted to deliver 7.4 million more jobs and reach full and higher employment by Q2 2022.",
+                        "evidence": [
+                            {
+                                "url": "https://www.moodysanalytics.com/webinars-on-demand/2020/macroeconomic-impact-candidate-policies",
+                                "what": "Webinar going over the report by the author's. They take questions at the end."
+                            },
+                            {
+                                "url": "https://www.moodysanalytics.com/-/media/article/2020/the-macroeconomic-consequences-trump-vs-biden.pdf",
+                                "what": "The report itself: The Macroeconomic Consequences: Trump vs Biden."
+                            },
+                            {
+                                "url": "https://ma.moodys.com/rs/961-KCJ-308/images/2020-09-24-Macroeconomic-Impact-of-Candidate%27s-Economic-Policies.pdf",
+                                "what": "The slides from the Webinar."
+                            },
+                            {
+                                "url": "https://www.economy.com/getlocal?q=37e3916c-8e03-4e43-ba24-0ba6add17c94&app=eccafile",
+                                "what": "Moody's U.S. Macro Model Methodology"
+                            },
+                            {
+                                "url": "https://fortune.com/2020/10/05/biden-win-2020-us-economy-goldman-sachs-predictions-blue-wave-democrats/",
+                                "what": "Goldman Sachs' chief economist, Jan Hatzius says the Biden Jobs Plan would benefit the benefit the economy."
+                            },
+                            {
+                                "url": "https://en.wikipedia.org/wiki/Macroeconomic_model",
+                                "what": "An overview of macroeconomic modelling including some of the general techniques used by Moody's"
+                            },
+                            {
+                                "url": "https://www.clevelandfed.org/en/newsroom-and-events/publications/economic-commentary/economic-commentary-archives/2011-economic-commentaries/ec-201119-macroeconomic-models-forecasting-and-policymaking.aspx",
+                                "what": "Explains how macroeconomic models and forecasting can make policy more effective. This includes the benefits and drawbacks of different models."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "conclusion": "The American dream cannot exist without full employment.",
+                "premises": [
+                    {
+                        "premise": "The American dream is defined as: \"a happy way of living that is thought of by many Americans as something that can be achieved by anyone in the U.S. especially by working hard and becoming successful.\"",
+                        "evidence": [{
+                            "url": "https://www.merriam-webster.com/dictionary/the%20American%20dream",
+                            "how": "Definition from the Merriam-Webster dictionary."
+                        }]
+                    },
+                    "If any American cannot work hard or become successful than the American dream cannot exist."
+                ]
+            }
+        ]
+    }
+}
