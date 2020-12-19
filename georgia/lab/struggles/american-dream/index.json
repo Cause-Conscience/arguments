@@ -11,25 +11,33 @@
                         "evidence": [
                             {
                                 "url": "https://www.youtube.com/watch?v=-9Q8li1f0gM",
-                                "how": "Georgia Senator Perdue: \"these two seats, as Lindsey well noted, are the last line of defense against this liberal, socialist agenda the Democrats will perpetrate.\"",
-                                "start-time": "0:36"
+                                "how": "\"[T]hese two seats, as Lindsey well noted, are the last line of defense against this liberal, socialist agenda the Democrats will perpetrate.\"",
+                                "start-time": "0:36",
+                                "who": "Georgia Senator David Perdue",
+                                "about-who": "The democratic candidates: Jon Ossoff and Raphael Warnock",
+                                "source": "Fox News"
                             },
                             {
                                 "url": "https://www.c-span.org/video/?478296-1/georgia-us-senate-special-election-debate",
-                                "how": "Georgia Senator Kelly Loeffler says: \"There are two visions for our country. Mine: the American dream. My opponent: socialism.\"",
-                                "start-time": "54:13"
+                                "how": "\"There are two visions for our country. Mine: the American dream. My opponent: socialism.\"",
+                                "start-time": "54:13",
+                                "who": "Georgia Senator Kelly Loeffler",
+                                "about-who": "Reverend Raphael Warnock",
+                                "source": "C-SPAN"
                             },
                             {
                                 "url": "https://www.c-span.org/video/?478296-1/georgia-us-senate-special-election-debate",
                                 "how": "\"He wants to fundamentally change America into a socialist country. Well I'm not going to let that happen.\"",
                                 "start-time": "54:54",
-                                "context": "Senator Loeffler about the Reverend Raphael Warnock." 
+                                "who": "Senator Loeffler",
+                                "about-who": "Reverend Raphael Warnock",
+                                "source": "C-SPAN"
                                 
                             }
                         ]
                     },
                     {
-                        "premise": "Moody's Analytics published a report (The Macroeconomic Consequences: Trump vs Biden) which showed that compared to what Trump and the Republicans had proposed, the Biden Jobs Program was predicted to deliver 7.4 million more jobs and reach full and higher employment by Q2 2022.",
+                        "premise": "The Biden Jobs Program is predicted to deliver 7.4 million more jobs and reach full and higher employment a year earlier than the Republican plan would accomplish less.",
                         "evidence": [
                             {
                                 "url": "https://www.moodysanalytics.com/webinars-on-demand/2020/macroeconomic-impact-candidate-policies",

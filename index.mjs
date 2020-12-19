@@ -14,7 +14,7 @@ const document = function (logic) {
 
 }
 
-readFile("../georgia/lab/struggles/american-dream/index.json", "utf-8", function (error, json) {
+readFile("./georgia/lab/struggles/american-dream/index.json", "utf-8", function (error, json) {
     const template = JSON.parse(json);
 
     writeFile('index.html', document(parse_logic(template)), function (error) {
@@ -80,6 +80,14 @@ function render_premises(premises, conclusion){
     + indent(1) + "</div>\n"; 
 }
 
+function use_if_able(property, name, description) {
+    return (
+        property
+        ? "<div class='" + name + "'>" + description + property + "</div>\n"
+        : ""
+    )
+}
+
 function render_evidence(the_evidence) {
     if (Array.isArray(the_evidence)) {
         const the_rendered_evidence = the_evidence.map(
@@ -91,8 +99,28 @@ function render_evidence(the_evidence) {
                 evidence.how
                 ? evidence.how
                 : evidence.what
+            )
+            + "</a>\n"
+            + use_if_able(
+                evidence.who,
+                "who",
+                "Who: "
             ) 
-            + "</a>"
+            + use_if_able(
+                evidence["about-who"],
+                "about-who",
+                "About: "
+            )
+            + use_if_able(
+                evidence["start-time"],
+                "start-time",
+                "Start time: ",
+            )
+            + use_if_able(
+                evidence["source"],
+                "source",
+                "Source: ",
+            )
             + "</li>"
         ).reduce(
             (the_evidence_rendered, rendered_evidence) => the_evidence_rendered
