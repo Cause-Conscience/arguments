@@ -5,11 +5,19 @@ const document = function (logic) {
     const doctype = "<!DOCTYPE html>\n";
 
     const head = (child_n) => "<head>\n" + indent() + child_n + "\n" + "</head>\n";
-    const body = (child_n) => "<body>\n" + indent() + child_n + "\n" + "</body>\n";
+    const body = (child_n, last_child) => "<body>\n"
+        + indent() + child_n + "\n"
+        + indent() + last_child + "\n"
+        + "</body>\n";
 
-    const link = (href) => "<link rel='stylesheet' href='" + href + "'"
+    const link = (href) => "<link rel='stylesheet' href='" + href + "'";
+    const script = "<script type='module' src='index.js'></script>"
 
-    const document = doctype + head(link("index.css")) + body(logic);
+    const document = doctype + head(link("index.css")) + body(
+        logic,
+        script
+    );
+
     return document;
 
 }
@@ -28,19 +36,54 @@ readFile("./georgia/lab/struggles/american-dream/index.json", "utf-8", function 
 });
 
 
-function parse_logic(logic) {
-    console.log("logic", logic);
+function parse_logic(logic, depth = 0) {
     if (logic.argument) {
         // add an argument layer
         return render_argument(logic, parse_logic(logic.argument));
     }
     if (logic.conclusion) {
         if (typeof logic.conclusion === "string" && logic.premises) {
-            return renderConclusion(render_premises(logic.premises), logic.conclusion);
-
+            return render_conclusion(
+                logic.premises,
+                logic.conclusion,
+                depth
+            );
         }
 
     }
+}
+/*
+function render_conclusion(premises, conclusion, depth=0) {
+    const heading = (
+        conclusion
+        ? "<h2>" + conclusion + "</h2>\n"
+        : ""
+    );
+    const depth_class = (
+        depth === 0
+        ? "argument__conclusion"
+        : "conclusion__c" + depth
+    );
+
+    return "<div class='" + depth_class + "'>\n" + indent(2) + heading + premises + "</div>\n";
+
+}
+*/
+
+function render_conclusion(premises, conclusion, depth=0) {
+    const heading = (
+        conclusion
+        ? "<h2>" + conclusion + "</h2>\n"
+        : ""
+    );
+    const depth_class = (
+        depth === 0
+        ? "argument__conclusion"
+        : "conclusion__c" + depth
+    );
+
+    return "<div class='" + depth_class + "'>\n" + indent(2) + heading + render_premises(premises, undefined, depth) + "</div>\n";
+
 }
 
 function render_argument(logic, children) {
@@ -52,32 +95,47 @@ function render_argument(logic, children) {
 
 }
 
-function render_premises(premises, conclusion){
-    const rendered_premises = premises.map(function(premise){
+function render_premises(premises, conclusion, depth=0){
+    console.log("render_premises: ", depth);
+    console.log("render_premises: ", premises);
+    const rendered_premises = premises.map(function(premise, number){
         if (premise.conclusion && premise.premises) {
             const {conclusion, premises} = premise;
-            console.log("The all important lion: ", premise, "\n", conclusion);
-            return parse_logic(premise)
+            return render_conclusion(premises, conclusion, number + 1);
+            //return parse_logic(premise, depth + 1)
         }
         if (premise.premise) {
             if (premise.evidence) {
-                console.log("evidence", premise);
                 return render_premise(
                     premise.premise,
-                    render_evidence(premise.evidence)
+                    render_evidence(premise.evidence),
+                    depth,
+                    number,
                 );
 
             }
-            return render_premise(premise.premise);
+            return render_premise(
+                premise.premise,
+                undefined,
+                depth,
+                number
+            );
         }
         if (typeof premise === "string") {
-            return render_premise(premise);
+            return render_premise(premise, undefined, depth, number);
         }
     }).reduce((premises, premise) => premises + premise, "");
 
-    return indent(2) + "<div class='premises'>\n"
+    const class_name = (
+        depth === 0
+        ? " high-premises"
+        : ""
+
+    );
+
+    return indent(2) + "<div class='premises" + class_name +"'>\n"
     + indent() + rendered_premises
-    + indent(1) + "</div>\n"; 
+    + indent(1) + "</div>\n";
 }
 
 function use_if_able(property, name, description) {
@@ -130,17 +188,17 @@ function render_evidence(the_evidence) {
     }
 }
 
-function render_premise(current_premise, evidence) {
-    console.log("Current premise: ", current_premise);
+function render_premise(current_premise, evidence, depth, number) {
     if (current_premise.premises && current_premise.conclusion) {
         const {premises, conclusion} = current_premise;
         const rendered_conclusion = "<h2>" + conclusion + "</h2>\n"
         return "<div class='conclusion_premise'>\n"
         + indent() + rendered_conclusion
-        + indent() + render_premises(premises)
+        + indent() + render_premises(premises, undefined, depth)
         + "</div>";
     }
-    return "<div class='premise'>"
+    return "<div class='conclusion__c" + depth  + "__p"
+    + (number + 1) +" '>"
     + "<h3>"
     + current_premise
     + "</h3>"
@@ -149,15 +207,6 @@ function render_premise(current_premise, evidence) {
 
 }
 
-function renderConclusion(premises, conclusion) {
-    const heading = (
-        conclusion
-        ? "<h2>" + conclusion + "</h2>\n"
-        : ""
-    );
-    return "<div class='conclusion'>\n" + indent(2) + heading + premises + "</div>\n";
-
-}
 
 function indent(spaces = 1) {
     if (spaces === 1) {

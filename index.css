@@ -22,7 +22,6 @@ body {
     color: white;
     font-family: 'FiraMono', monospace;
     line-height: 1.35;
-    margin-top: 25px;
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
     font-feature-settings: 'kern' 1;
@@ -31,45 +30,56 @@ body {
 .argument {
     background-color: white;
     color: deeppink;
-    margin-bottom: 60px;
-    padding: 35px;
 }
 
 .premise {
     background-color: white;
     border: dashed deeppink 2px;
-    margin: 10px;
-    padding: 45px;
 
 }
 
 .premises {
 
     background-color: white;
-    display: grid;
-    grid-template-columns: 48% 48%;
-    grid-gap: 2%;
     color: black;
     font-size: 18px;
-    padding: 13px;
     padding-right: 0px;
-
+    /*
+    padding: 13px;
+    */
 }
 
-.conclusion {
+.high-premises {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0%;
+}
+
+.argument__conclusion {
     background-color: black;
     color: white;
     margin-top: 10px;
-    padding: 13px;
-    padding-left: 78px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-top: 25px;
 }
+
+.argument__conclusion h2 {
+
+    margin-bottom: 0px;
+}
+
 
 h2 {
     padding-bottom: 15px;
     width: 100%;
+}
+
+.conclusion__c1 h2 {
+    margin-top: 0px;
+    padding-right: 0px;
+
+}
+.conclusion__c2 h2 {
+    margin-top: 0px;
+
 }
 
 .evidence {
@@ -96,12 +106,17 @@ h2 {
 }
 
 
-.evidence__source:hover {
+.conclusion__c1 .evidence__source:hover {
     color: black;
     background-color: deeppink;
 }
 
-.who, .about-who, .start-time, .source {
+.conclusion__c2 .evidence__source:hover {
+    color: black;
+    background-color: lime;
+}
+
+.conclusion__c1 .who, .conclusion__c1 .about-who, .conclusion__c1 .start-time, .conclusion__c1 .source {
     background-color: deeppink;
     margin: 10px;
     margin-top: 20px;
@@ -109,3 +124,77 @@ h2 {
     padding: 5px;
 
 }
+
+.conclusion__c2 .who, .conclusion__c2 .about-who, .conclusion__c2 .start-time, .conclusion__c2 .source {
+    background-color: lime;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 5px;
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+
+@media only screen  and (max-width : 1224px) {
+
+}
+
+
+@media only screen  and (min-width : 1224px) {
+
+    .premises {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 0%;
+
+    }
+}
+
+@media only screen  and (min-width : 1824px) {
+    body {
+        margin-top: 25px;
+    }
+
+    .argument {
+        margin-bottom: 60px;
+        padding: 35px;
+    }
+    .premise {
+        margin: 10px;
+        padding: 45px;
+    }
+    .argument__conclusion {
+
+        padding: 13px;
+        padding-left: 78px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        padding-top: 25px;
+    }
+}
+

@@ -40,12 +40,16 @@
                         "premise": "The Biden Jobs Program is predicted to deliver 7.4 million more jobs and reach full and higher employment a year earlier than the Republican plan would accomplish less.",
                         "evidence": [
                             {
-                                "url": "https://www.moodysanalytics.com/webinars-on-demand/2020/macroeconomic-impact-candidate-policies",
-                                "what": "Webinar going over the report by the author's. They take questions at the end."
+                                "url": "https://www.moodysanalytics.com/-/media/article/2020/the-macroeconomic-consequences-trump-vs-biden.pdf",
+                                "what": "The Macroeconomic Consequences: Trump vs Biden.",
+                                "who": "By Mark Zandi, Bernard Yaros",
+                                "source": "Moody's Analytics"
                             },
                             {
-                                "url": "https://www.moodysanalytics.com/-/media/article/2020/the-macroeconomic-consequences-trump-vs-biden.pdf",
-                                "what": "The report itself: The Macroeconomic Consequences: Trump vs Biden."
+                                "url": "https://www.moodysanalytics.com/webinars-on-demand/2020/macroeconomic-impact-candidate-policies",
+                                "what": "Webinar going over the report by the authors. They take questions at the end.",
+                                "who": "Mark Zandi, Bernard Yaros",
+                                "source": "Moody's Analytics"
                             },
                             {
                                 "url": "https://ma.moodys.com/rs/961-KCJ-308/images/2020-09-24-Macroeconomic-Impact-of-Candidate%27s-Economic-Policies.pdf",
@@ -78,7 +82,8 @@
                         "premise": "The American dream is defined as: \"a happy way of living that is thought of by many Americans as something that can be achieved by anyone in the U.S. especially by working hard and becoming successful.\"",
                         "evidence": [{
                             "url": "https://www.merriam-webster.com/dictionary/the%20American%20dream",
-                            "how": "Definition from the Merriam-Webster dictionary."
+                            "how": "The dictionary definition",
+                            "source": "Merriam-Webster dictionary"
                         }]
                     },
                     "If any American cannot work hard or become successful than the American dream cannot exist."
