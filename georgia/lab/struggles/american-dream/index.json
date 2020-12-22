@@ -86,7 +86,12 @@
                             "source": "Merriam-Webster dictionary"
                         }]
                     },
-                    "If any American cannot work hard or become successful than the American dream cannot exist."
+                    {
+                        "premise": "If any American cannot work hard or become successful than the American dream cannot exist.",
+                        "evidence": [{
+                            "implication-type": "deduction"
+                        }]
+                    }
                 ]
             }
         ]
