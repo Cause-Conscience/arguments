@@ -210,7 +210,7 @@ function render_premise(current_premise, evidence, depth, number) {
         + "</div>";
     }
     return "<div class='conclusion__c" + depth  + "__p"
-    + (number + 1) +" '>"
+    + (number + 1) +" premise'>"
     + "<h3>"
     + current_premise
     + "</h3>"

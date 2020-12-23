@@ -34,7 +34,7 @@ body {
 
 .premise {
     background-color: white;
-    border: dashed deeppink 2px;
+    padding: 2px;
 
 }
 
@@ -68,18 +68,21 @@ body {
 
 
 h2 {
+    padding: 5px;
     padding-bottom: 15px;
-    width: 100%;
+    width: 98%;
 }
 
 .conclusion__c1 h2 {
-    margin-top: 0px;
-    padding-right: 0px;
+    margin-top: 1px;
+    padding: 1px;
+    width: 97%;
 
 }
 .conclusion__c2 h2 {
-    margin-top: 0px;
-
+    padding: 1px;
+    margin-top: 1px;
+    width: 97%;
 }
 
 .evidence {
@@ -186,7 +189,7 @@ h2 {
     }
     .premise {
         margin: 10px;
-        padding: 45px;
+        padding: 15px;
     }
     .argument__conclusion {
 
