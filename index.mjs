@@ -156,7 +156,14 @@ function render_evidence(the_evidence) {
             + (
                 evidence.how
                 ? evidence.how
-                : evidence.what
+                : (
+                    evidence.what
+                    ? evidence.what
+                    : "This just uses " + evidence["inference-type"]
+
+
+
+                ) 
             )
             + "</a>\n"
             + use_if_able(
@@ -178,6 +185,11 @@ function render_evidence(the_evidence) {
                 evidence["source"],
                 "source",
                 "Source: ",
+            )
+            + use_if_able(
+                evidence["inference-type"],
+                "inference-type",
+                "Inference type: "
             )
             + "</li>"
         ).reduce(

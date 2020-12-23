@@ -41,35 +41,44 @@
                         "evidence": [
                             {
                                 "url": "https://www.moodysanalytics.com/-/media/article/2020/the-macroeconomic-consequences-trump-vs-biden.pdf",
-                                "what": "The Macroeconomic Consequences: Trump vs Biden.",
-                                "who": "By Mark Zandi, Bernard Yaros",
+                                "what": "Report: The Macroeconomic Consequences: Trump vs Biden.",
+                                "who": "By Mark Zandi and Bernard Yaros",
                                 "source": "Moody's Analytics"
                             },
                             {
                                 "url": "https://www.moodysanalytics.com/webinars-on-demand/2020/macroeconomic-impact-candidate-policies",
-                                "what": "Webinar going over the report by the authors. They take questions at the end.",
-                                "who": "Mark Zandi, Bernard Yaros",
+                                "what": "Webinar: Assessing the Macroeconomic Impact of Biden's Economic Policies",
+                                "who": "Mark Zandi and Bernard Yaros",
                                 "source": "Moody's Analytics"
                             },
                             {
                                 "url": "https://ma.moodys.com/rs/961-KCJ-308/images/2020-09-24-Macroeconomic-Impact-of-Candidate%27s-Economic-Policies.pdf",
-                                "what": "The slides from the Webinar."
+                                "what": "Slides: Assessing the Macroeconomic Impact of Biden's Economic Policies",
+                                "who": "Mark Zandi and Bernard Yaros",
+                                "source": "Moody's Analytics"
                             },
                             {
                                 "url": "https://www.economy.com/getlocal?q=37e3916c-8e03-4e43-ba24-0ba6add17c94&app=eccafile",
-                                "what": "Moody's U.S. Macro Model Methodology"
+                                "what": "Moody's U.S. Macro Model Methodology",
+                                "who": "Mark Zandi and Scott Hoyt",
+                                "source": "Moody's Analytics"
                             },
                             {
                                 "url": "https://fortune.com/2020/10/05/biden-win-2020-us-economy-goldman-sachs-predictions-blue-wave-democrats/",
-                                "what": "Goldman Sachs' chief economist, Jan Hatzius says the Biden Jobs Plan would benefit the benefit the economy."
+                                "what": "Goldman Sachs' chief economist says Biden Jobs Plan would benefit the benefit the economy.",
+                                "who": "Jeff John Roberts writing about Jan Hatzius",
+                                "source": "Fortune Magazine"
                             },
                             {
                                 "url": "https://en.wikipedia.org/wiki/Macroeconomic_model",
-                                "what": "An overview of macroeconomic modelling including some of the general techniques used by Moody's"
+                                "what": "An overview of macroeconomic modeling including some of the general techniques used by Moody's",
+                                "source": "Wikipedia"
                             },
                             {
                                 "url": "https://www.clevelandfed.org/en/newsroom-and-events/publications/economic-commentary/economic-commentary-archives/2011-economic-commentaries/ec-201119-macroeconomic-models-forecasting-and-policymaking.aspx",
-                                "what": "Explains how macroeconomic models and forecasting can make policy more effective. This includes the benefits and drawbacks of different models."
+                                "what": "A history and evaluations of macroeconomic modeling",
+                                "who": "Andrea Pescatori and Saeed Zaman",
+                                "source": "Federal Reserve Bank of Cleveland"
                             }
                         ]
                     }
@@ -89,7 +98,8 @@
                     {
                         "premise": "If any American cannot work hard or become successful than the American dream cannot exist.",
                         "evidence": [{
-                            "implication-type": "deduction"
+                            "url": "https://en.wikipedia.org/wiki/Deductive_reasoning",
+                            "inference-type": "deduction"
                         }]
                     }
                 ]

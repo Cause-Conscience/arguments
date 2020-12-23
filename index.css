@@ -116,7 +116,7 @@ h2 {
     background-color: lime;
 }
 
-.conclusion__c1 .who, .conclusion__c1 .about-who, .conclusion__c1 .start-time, .conclusion__c1 .source {
+.conclusion__c1 .who, .conclusion__c1 .about-who, .conclusion__c1 .start-time, .conclusion__c1 .source, .conclusion__c1 .inference-type {
     background-color: deeppink;
     margin: 10px;
     margin-top: 20px;
@@ -125,7 +125,7 @@ h2 {
 
 }
 
-.conclusion__c2 .who, .conclusion__c2 .about-who, .conclusion__c2 .start-time, .conclusion__c2 .source {
+.conclusion__c2 .who, .conclusion__c2 .about-who, .conclusion__c2 .start-time, .conclusion__c2 .source, .conclusion__c2 .inference-type {
     background-color: lime;
     margin: 10px;
     margin-top: 20px;
