@@ -1,7 +1,7 @@
 FROM node:14.15.3
 
+WORKDIR /app
 
-
-COPY . /.app_platform_workspace/
+COPY . .
 
 CMD [ "node", "index.mjs" ]
