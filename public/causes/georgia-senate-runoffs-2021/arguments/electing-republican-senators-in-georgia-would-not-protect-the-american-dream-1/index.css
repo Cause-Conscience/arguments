@@ -144,10 +144,10 @@ h2 {
 
 .x {
     position: absolute;
-    top: 15px;
-    right: 10px;
-    width: 23px;
-    height: 23px;
+    top: 30px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
     border: 2px solid #eef5df;
     background-color: deeppink;
     border-radius: 50%;
@@ -155,10 +155,10 @@ h2 {
 
 .x::before, .x::after {
     position: absolute;
-    top: 10px;
-    left: 5px;
-    width: 13px;
-    height: 3px;
+    top: 20px;
+    left: 10px;
+    width: 26px;
+    height: 6px;
     content: "";
     background-color: white;
     display: none;
@@ -194,6 +194,7 @@ h2 {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
 }
 
 /* iPads (landscape) ----------- */
@@ -211,6 +212,22 @@ h2 {
 
 
 @media only screen  and (min-width : 1224px) {
+    .x {
+        top: 15;
+        right: 10;
+
+        width: 23px;
+        height: 23px;
+
+    }
+
+    .x::before, .x::after {
+
+        top: 10px;
+        left: 5px;
+        width: 13px;
+        height: 3px;
+    }
 
     .premises {
 
