@@ -1,12 +1,13 @@
 import {readFile, writeFile} from "fs";
 
-const document = function (logic) {
+const document = function (logic, context) {
 
     const doctype = "<!DOCTYPE html>\n";
 
     const head = (child_n) => "<head>\n" + indent() + child_n + "\n" + "</head>\n";
-    const body = (child_n, last_child) => "<body>\n"
+    const body = (child_n, child_n_1, last_child) => "<body>\n"
         + indent() + child_n + "\n"
+        + indent() + child_n_1 + "\n"
         + indent() + last_child + "\n"
         + "</body>\n";
 
@@ -14,6 +15,7 @@ const document = function (logic) {
     const script = "<script type='module' src='index.js'></script>"
 
     const document = doctype + head(link("index.css")) + body(
+        context,
         logic,
         script
     );
@@ -25,7 +27,10 @@ const document = function (logic) {
 readFile("./georgia/lab/struggles/american-dream/index.json", "utf-8", function (error, json) {
     const template = JSON.parse(json);
 
-    writeFile('index.html', document(parse_logic(template)), function (error) {
+    const context = () => "<div class='context'>\n<h2>Purpose</h2>\n"
+        + "<p>We hear both Senator David Perdue and Senator Kelly Loeffler repeatedly describe the democratic agenda as something very bad and harmful. In the recent debate, Senator Loeffler remarked: \"There are two visions for our country. Mine: the American dream. My opponent: socialism.\" Hearing these variations about the Democrats, I finally wondered if Senator Loeffler and Senator Purdue were making a false promise. In what follows here are some of the considerations I've made in thinking about this question. I have thought more than I have put down and I hope to continually improve this space. If you want help understanding or feel like you can help me improve this, feel free to contact us.</p><div class='x'></div>\n</div>"
+
+    writeFile('public/causes/georgia-senate-runoffs-2021/arguments/electing-republican-senators-in-georgia-would-not-protect-the-american-dream-1/index.html', document(parse_logic(template), context()), function (error) {
         if (error) {
             console.log("Error", error);
             return;

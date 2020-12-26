@@ -28,6 +28,9 @@ const conclusion_c2_p2 = document.getElementsByClassName(
     "conclusion__c2__p2"
 )[0];
 
+const x = document.getElementsByClassName("x")[0];
+
+const context = document.getElementsByClassName("context")[0];
 if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))) {
     console.log("Destop");
     conclusion_c1.addEventListener(
@@ -255,3 +258,12 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
         }
     )
 }
+
+x.addEventListener(
+    "click",
+    function(event) {
+        console.log("Test");
+        context.style.display = "none";
+
+    }
+)

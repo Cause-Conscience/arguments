@@ -137,6 +137,49 @@ h2 {
 
 }
 
+.context {
+    position: relative;
+
+}
+
+.x {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid #eef5df;
+    background-color: deeppink;
+    border-radius: 50%;
+}
+
+.x::before, .x::after {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 13px;
+    height: 3px;
+    content: "";
+    background-color: white;
+    display: none;
+}
+.x::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.x::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.x:hover {
+    cursor: pointer;
+}
+.x:hover::before, .x:hover::after {
+    display: block;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 }
