@@ -154,6 +154,7 @@ h2 {
 }
 
 .x::before, .x::after {
+    display: block;
     position: absolute;
     top: 20px;
     left: 10px;
@@ -161,7 +162,6 @@ h2 {
     height: 6px;
     content: "";
     background-color: white;
-    display: none;
 }
 .x::before {
     -ms-transform: rotate(-45deg);
@@ -175,9 +175,6 @@ h2 {
 }
 .x:hover {
     cursor: pointer;
-}
-.x:hover::before, .x:hover::after {
-    display: block;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -223,10 +220,14 @@ h2 {
 
     .x::before, .x::after {
 
+        display: none;
         top: 10px;
         left: 5px;
         width: 13px;
         height: 3px;
+    }
+    .x:hover::before, .x:hover::after {
+        display: block;
     }
 
     .premises {
