@@ -5,9 +5,18 @@ const document = function (logic, context) {
     const doctype = "<!DOCTYPE html>\n";
 
     const head = (child_n) => "<head>\n" + indent() + child_n + "\n" + "</head>\n";
-    const body = (child_n, child_n_1, last_child) => "<body>\n"
+    const heading = () => "<header><a href='../../../../index.html'>"
+                          + "<h2>CauseConscience.org</h2></a>\n"
+                          + "<div class='contact'>"
+                          + "<a class='email' href='mailto: info@CauseConscience.org'>"
+                          + "info@CauseConscience.org</a> "
+                          + "and <a class='telephone' href='tel:855-878-2750'>1-855-878-2750</a></div>"
+                          + "</header>";
+
+    const body = (child_n, child_n_1, child_n_2, last_child) => "<body>\n"
         + indent() + child_n + "\n"
         + indent() + child_n_1 + "\n"
+        + indent() + child_n_2 + "\n"
         + indent() + last_child + "\n"
         + "</body>\n";
 
@@ -15,6 +24,7 @@ const document = function (logic, context) {
     const script = "<script type='module' src='index.js'></script>"
 
     const document = doctype + head(link("index.css")) + body(
+        heading(),
         context,
         logic,
         script
@@ -28,7 +38,8 @@ readFile("./georgia/lab/struggles/american-dream/index.json", "utf-8", function 
     const template = JSON.parse(json);
 
     const context = () => "<div class='context'>\n<h2>Purpose</h2>\n"
-        + "<p>We hear both Senator David Perdue and Senator Kelly Loeffler repeatedly describe the democratic agenda as something very bad and harmful. In the recent debate, Senator Loeffler remarked: \"There are two visions for our country. Mine: the American dream. My opponent: socialism.\" Hearing these variations about the Democrats, I finally wondered if Senator Loeffler and Senator Purdue were making a false promise. In what follows here are some of the considerations I've made in thinking about this question. I have thought more than I have put down and I hope to continually improve this space. If you want help understanding or feel like you can help me improve this, feel free to contact us.</p><div class='x'></div>\n</div>"
+        + "<p>We hear both Senator David Perdue and Senator Kelly Loeffler repeatedly describe the democratic agenda as something very bad and harmful. In the recent debate, Senator Loeffler remarked: \"There are two visions for our country. Mine: the American dream. My opponent: socialism.\" I let a few of these claims marinate. Was it all true? Was it all false? I finally wondered is Senator Loeffler making a false promise?</p>"
+        + "<p>In this thesis, I show how I've come to my current thoughts on the subject. I have thought more than I have put down. I hope to continually to make this space include resources to improve efficiency and effectiveness at understanding this topic comprehensively. I'll soon be adding more links. If you want help understanding or feel like you can help me improve this, feel free to contact me: <a href='mailto: info@CauseConscience.org'>info@CauseConscience.org</a> and <a href='tel:855-878-2750'>1-855-878-2750</a>.</p><div class='x'></div>\n</div>"
 
     writeFile('public/causes/georgia-senate-runoffs-2021/arguments/electing-republican-senators-in-georgia-would-not-protect-the-american-dream-1/index.html', document(parse_logic(template), context()), function (error) {
         if (error) {

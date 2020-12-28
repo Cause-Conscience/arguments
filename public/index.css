@@ -22,7 +22,7 @@ body {
     color: white;
     font-family: 'FiraMono', monospace;
     box-sizing: border-box;
-    line-height: 1.3;
+    line-height: 1.4;
 
 }
 
@@ -45,6 +45,25 @@ body {
     color: deeppink;
 
 }
+
+.solo-email:link {
+    color: black;
+
+}
+
+.solo-email:visited {
+    color: black;
+
+}
+.solo-email:hover {
+    color: lightgrey;
+
+}
+.solo-email:active {
+    color: black;
+
+}
+
 
 .contact {
     position: fixed;
@@ -75,9 +94,34 @@ h3.activities {
     color: black;
 }
 
-img {
+img, figure figcaption {
     float: right;
+    padding: 10px;
     width: 50%;
+}
+
+figcaption {
+    background-color: black;
+
+}
+
+a:link {
+    color: white;
+
+}
+
+a:visited {
+    color: white;
+}
+
+
+
+a:hover {
+    color: deeppink;
+}
+a:active {
+    color: white;
+
 }
 
 table {
@@ -108,6 +152,34 @@ table td a {
 .runoff__purpose p {
     padding-bottom: 2rem;
 
+}
+
+.neon {
+
+    color: white;
+    animation: neon .08s ease-in-out infinite alternate;
+
+
+}
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
 }
 
 @media only screen and (min-device-width: 768px) {

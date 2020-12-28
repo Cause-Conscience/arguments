@@ -27,6 +27,22 @@ body {
     font-feature-settings: 'kern' 1;
 }
 
+.email {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+}
+
+.telephone {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
+    font-size: 14px;
+
+}
+
 .argument {
     background-color: white;
     color: deeppink;
@@ -48,6 +64,7 @@ body {
     padding: 13px;
     */
 }
+
 
 .high-premises {
     display: grid;
@@ -104,6 +121,44 @@ h2 {
     text-align: left;
 }
 
+header {
+    background-color: white;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+header a {
+
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+header h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+
+}
+
+header a:link {
+    color: black;
+}
+
+header a:visited {
+
+    color: black;
+}
+
+header a:hover {
+
+    color: lightgray;
+}
+
+header a:active {
+    color: black;
+
+}
+
 .evidence__source a {
     color: white;
 }
@@ -143,9 +198,22 @@ h2 {
     line-height 1.3;
 }
 
+.context a:link {
+    color: white;
+}
+.context a:visited {
+    color: white;
+}
+.context a:hover {
+    color: deeppink;
+}
+.context a:active {
+    color: deeppink;
+}
+
 .x {
     position: absolute;
-    top: 30px;
+    top: 0px;
     right: 20px;
     width: 46px;
     height: 46px;
@@ -192,6 +260,16 @@ h2 {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .telephone {
+        font-size: 20px;
+
+    }
+
+    .email {
+        font-size: 20px;
+
+    }
+
 
 }
 
@@ -209,6 +287,15 @@ h2 {
 }
 
 @media only screen  and (min-width : 1224px) {
+    .telephone {
+        font-size: 24px;
+
+    }
+
+    .email {
+        font-size: 24px;
+
+    }
     .context {
 
         font-size: 20px;
