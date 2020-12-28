@@ -68,28 +68,12 @@ function parse_logic(logic, depth = 0) {
 
     }
 }
-/*
-function render_conclusion(premises, conclusion, depth=0) {
-    const heading = (
-        conclusion
-        ? "<h2>" + conclusion + "</h2>\n"
-        : ""
-    );
-    const depth_class = (
-        depth === 0
-        ? "argument__conclusion"
-        : "conclusion__c" + depth
-    );
-
-    return "<div class='" + depth_class + "'>\n" + indent(2) + heading + premises + "</div>\n";
-
-}
-*/
 
 function render_conclusion(premises, conclusion, depth=0) {
+    const conclusion_label = "<h4>Conclusion</h4>\n";
     const heading = (
         conclusion
-        ? "<h2>" + conclusion + "</h2>\n"
+        ? "<h2>" + conclusion + "</h2>\n" + conclusion_label + "\n"
         : ""
     );
     const depth_class = (
@@ -166,6 +150,7 @@ function render_evidence(the_evidence) {
     if (Array.isArray(the_evidence)) {
         const the_rendered_evidence = the_evidence.map(
             (evidence) => "<li class='evidence__source'>"
+            + "<h4>Evidence</h4>"
             + "<a href='"
             + evidence.url
             + "'>"
@@ -179,7 +164,7 @@ function render_evidence(the_evidence) {
 
 
 
-                ) 
+                )
             )
             + "</a>\n"
             + use_if_able(
@@ -217,16 +202,9 @@ function render_evidence(the_evidence) {
 }
 
 function render_premise(current_premise, evidence, depth, number) {
-    if (current_premise.premises && current_premise.conclusion) {
-        const {premises, conclusion} = current_premise;
-        const rendered_conclusion = "<h2>" + conclusion + "</h2>\n"
-        return "<div class='conclusion_premise'>\n"
-        + indent() + rendered_conclusion
-        + indent() + render_premises(premises, undefined, depth)
-        + "</div>";
-    }
     return "<div class='conclusion__c" + depth  + "__p"
     + (number + 1) +" premise'>"
+    + "<h4>Premise</h4>\n"
     + "<h3>"
     + current_premise
     + "</h3>"

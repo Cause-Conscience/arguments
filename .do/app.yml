@@ -1,0 +1,19 @@
+domains:
+- domain: causeconscience.org
+  type: PRIMARY
+  zone: causeconscience.org
+- domain: www.causeconscience.org
+  type: ALIAS
+  zone: causeconscience.org
+name: arguments
+region: nyc
+static_sites:
+- github:
+    branch: main
+    deploy_on_push: true
+    repo: Cause-Conscience/arguments
+  dockerfile_path: Dockerfile
+  name: arguments
+  output_dir: /app/public
+  routes:
+  - path: /
