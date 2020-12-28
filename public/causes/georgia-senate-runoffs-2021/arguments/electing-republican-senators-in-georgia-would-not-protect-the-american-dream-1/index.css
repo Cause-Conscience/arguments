@@ -129,6 +129,7 @@ h4 {
 header {
     background-color: white;
     margin-bottom: 0px;
+    min-height: 5rem;
     position: relative;
 }
 
