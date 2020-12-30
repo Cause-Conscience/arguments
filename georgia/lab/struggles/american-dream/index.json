@@ -7,7 +7,7 @@
                 "conclusion": "Unemployment would decrease much slower and would remain higher if Republicans were elected in Georgia.",
                 "premises": [
                     {
-                        "premise": "Both Republicans elected will both block the 'Democratic agenda.'",
+                        "premise": "Both Republicans elected will both block the 'Democratic agenda' including the Biden jobs plan.",
                         "evidence": [
                             {
                                 "url": "https://www.youtube.com/watch?v=-9Q8li1f0gM",
@@ -33,11 +33,19 @@
                                 "about-who": "Reverend Raphael Warnock",
                                 "source": "C-SPAN"
                                 
+                            },
+                            {
+                                "url": "https://www.youtube.com/watch?v=P9RJosAtsn4",
+                                "what": "The president-elect asking for Georgia to elect Jon Ossoff and Reverend Raphael Warnock so that his agenda will succeed. Both candidates approve his message.",
+                                "who": "President-elect Joe Biden",
+                                "about-who": "Jon Ossoff and Reverend Raphael Warnock",
+                                "source": "Jon Ossoff for Senate"
+
                             }
                         ]
                     },
                     {
-                        "premise": "The Biden Jobs Program is predicted to deliver 7.4 million more jobs and reach full and higher employment a year earlier than the Republican plan would accomplish less.",
+                        "premise": "The Biden jobs plan is predicted to deliver 7.4 million more jobs and reach full and higher employment a year earlier than the Republican plan would accomplish less.",
                         "evidence": [
                             {
                                 "url": "https://www.moodysanalytics.com/-/media/article/2020/the-macroeconomic-consequences-trump-vs-biden.pdf",
@@ -79,6 +87,18 @@
                                 "what": "A history and evaluations of macroeconomic modeling",
                                 "who": "Andrea Pescatori and Saeed Zaman",
                                 "source": "Federal Reserve Bank of Cleveland"
+                            },
+                            {
+                                "url": "https://www.moodysanalytics.com/about-us/recognition",
+                                "what": "A list of awards and recognitions that Moody's Analytics has received.",
+                                "source": "Moody's Analytics"
+
+                            },
+                            {
+                                "url": "https://www.businesswire.com/news/home/20190507005341/en/Moody%E2%80%99s-Analytics-Wins-Consensus-Economics-Forecast-Accuracy-Award",
+                                "what": "Moody’s Analytics Wins Consensus Economics Forecast Accuracy Award",
+                                "source": "Business Wire"
+
                             }
                         ]
                     }
@@ -96,7 +116,7 @@
                         }]
                     },
                     {
-                        "premise": "If any American cannot work hard or become successful than the American dream cannot exist.",
+                        "premise": "If one or more Americans cannot find work because there are still not enough jobs, then no matter how hard one works success cannot be achieved.",
                         "evidence": [{
                             "url": "https://en.wikipedia.org/wiki/Deductive_reasoning",
                             "inference-type": "deduction"
