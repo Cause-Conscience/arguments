@@ -252,6 +252,37 @@ header a:active {
     cursor: pointer;
 }
 
+.what-to-do {
+    background-color: white;
+    color: black;
+    max-width: 700px;
+    margin-top: 15px;
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 5px;
+    padding-left: 10px;
+
+}
+
+.what-to-do h4 {
+    text-align: left;
+
+}
+
+.what-to-do a:link {
+    color: black;
+}
+.what-to-do a:visited {
+    color: black;
+}
+.what-to-do a:hover {
+    color: deeppink;
+}
+
+.what-to-do a:active {
+    color: lightgrey;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 }

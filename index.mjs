@@ -13,10 +13,17 @@ const document = function (logic, context) {
                           + "and <a class='telephone' href='tel:855-878-2750'>1-855-878-2750</a></div>"
                           + "</header>";
 
-    const body = (child_n, child_n_1, child_n_2, last_child) => "<body>\n"
+    const footer = () => "<div class='what-to-do'>\n"
+        + "<h3>What to do about it?</h3>"
+        + "<h4>If you agree with my conclusion<br />then help Jon Ossoff and Reverend Raphael Warnock Get Out The Vote:</h4>\n"
+        + "<p><a href='https://www.mobilize.us/mobilize/event/363601/'>Sign up to phonebank with Jon Ossoff here</a></p>"
+        + "<p><a href='https://www.mobilize.us/mobilize/event/362553/'>Sign up to phonebank with Reverend Raphael Warnock</a></p></div>";
+
+    const body = (child_n, child_n_1, child_n_2, child_n_3, last_child) => "<body>\n"
         + indent() + child_n + "\n"
         + indent() + child_n_1 + "\n"
         + indent() + child_n_2 + "\n"
+        + indent() + child_n_3 + "\n"
         + indent() + last_child + "\n"
         + "</body>\n";
 
@@ -27,6 +34,7 @@ const document = function (logic, context) {
         heading(),
         context,
         logic,
+        footer(),
         script
     );
 
